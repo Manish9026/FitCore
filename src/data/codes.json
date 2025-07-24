@@ -1,0 +1,26 @@
+[
+  {
+    "code": "FIT2024-VERIFY",
+    "product": "PowerMax Protein Powder",
+    "valid": true,
+    "message": "✅ Authentic Product Verified!"
+  },
+  {
+    "code": "ELITE-PRE-2024",
+    "product": "Elite Pre-Workout",
+    "valid": true,
+    "message": "✅ Authentic Product Verified!"
+  },
+  {
+    "code": "BANDS-RESIST-24",
+    "product": "Resistance Bands Set",
+    "valid": true,
+    "message": "✅ Authentic Product Verified!"
+  },
+  {
+    "code": "FAKE-CODE-123",
+    "product": "Unknown",
+    "valid": false,
+    "message": "❌ Invalid Code - Potential Counterfeit!"
+  }
+]

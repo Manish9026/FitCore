@@ -1,0 +1,22 @@
+{
+  "brand": "FitCore",
+  "tagline": "Unleash Your Potential",
+  "quickLinks": [
+    { "name": "Home", "path": "/" },
+    { "name": "Products", "path": "/products" },
+    { "name": "Verify Code", "path": "/verify" },
+    { "name": "Contact", "path": "/contact" }
+  ],
+  "categories": [
+    { "name": "Supplements", "path": "/products?category=Supplements" },
+    { "name": "Equipment", "path": "/products?category=Equipment" },
+    { "name": "Apparel", "path": "/products?category=Apparel" }
+  ],
+  "social": [
+    { "name": "Facebook", "icon": "facebook", "url": "https://facebook.com/fitcore" },
+    { "name": "Instagram", "icon": "instagram", "url": "https://instagram.com/fitcore" },
+    { "name": "Twitter", "icon": "twitter", "url": "https://twitter.com/fitcore" },
+    { "name": "YouTube", "icon": "youtube", "url": "https://youtube.com/fitcore" }
+  ],
+  "copyright": "© 2024 FitCore Products. All rights reserved."
+}

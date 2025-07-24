@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "PowerMax Protein Powder",
+    "category": "Supplements",
+    "image": "https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "benefits": ["Builds Muscle", "Fast Recovery", "24g Protein"],
+    "price": "$49.99",
+    "description": "Premium whey protein powder for maximum muscle growth and recovery."
+  },
+  {
+    "id": 2,
+    "name": "Elite Pre-Workout",
+    "category": "Supplements",
+    "image": "https://images.pexels.com/photos/4162541/pexels-photo-4162541.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "benefits": ["Increased Energy", "Better Focus", "Enhanced Performance"],
+    "price": "$34.99",
+    "description": "Advanced pre-workout formula for explosive energy and focus."
+  },
+  {
+    "id": 3,
+    "name": "Resistance Bands Set",
+    "category": "Equipment",
+    "image": "https://images.pexels.com/photos/4162668/pexels-photo-4162668.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "benefits": ["Versatile Training", "Portable", "Full Body Workout"],
+    "price": "$29.99",
+    "description": "Complete resistance band set for strength training anywhere."
+  },
+  {
+    "id": 4,
+    "name": "Yoga Mat Pro",
+    "category": "Equipment",
+    "image": "https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "benefits": ["Non-Slip Surface", "Extra Thick", "Eco-Friendly"],
+    "price": "$39.99",
+    "description": "Professional-grade yoga mat for comfortable and safe practice."
+  },
+  {
+    "id": 5,
+    "name": "BCAA Recovery",
+    "category": "Supplements",
+    "image": "https://images.pexels.com/photos/4162624/pexels-photo-4162624.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "benefits": ["Muscle Recovery", "Reduce Fatigue", "Amino Acids"],
+    "price": "$27.99",
+    "description": "Essential amino acids for faster recovery and reduced muscle fatigue."
+  },
+  {
+    "id": 6,
+    "name": "Adjustable Dumbbells",
+    "category": "Equipment",
+    "image": "https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "benefits": ["Space Saving", "Multiple Weights", "Durable"],
+    "price": "$199.99",
+    "description": "Space-efficient adjustable dumbbells for complete strength training."
+  }
+]

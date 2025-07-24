@@ -1,0 +1,13 @@
+{
+  "company": "FitCore Products",
+  "email": "support@fitcore.com",
+  "phone": "+1 (555) 123-4567",
+  "address": "123 Fitness Street, Muscle City, MC 12345",
+  "hours": "Monday - Friday: 9AM - 6PM PST",
+  "social": {
+    "facebook": "https://facebook.com/fitcore",
+    "instagram": "https://instagram.com/fitcore",
+    "twitter": "https://twitter.com/fitcore",
+    "youtube": "https://youtube.com/fitcore"
+  }
+}
