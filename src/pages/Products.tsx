@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, Star, ShoppingBag, Heart, Eye, CheckCircle, ShoppingCart } from 'lucide-react';
 import productsData from '../data/products.json';
+import { useLocation } from 'react-router-dom';
 
 const useIntersectionObserver = (options = {}) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,6 +23,8 @@ const useIntersectionObserver = (options = {}) => {
     if (ref.current) {
       observer.observe(ref.current);
     }
+
+
 
     return () => observer.disconnect();
   }, []);
@@ -193,7 +196,24 @@ const Products = () => {
       return matchesSearch && matchesCategory;
     });
   }, [searchTerm, selectedCategory]);
+const location =useLocation();
 
+  useEffect(()=>{
+    const queryParams = new URLSearchParams(location.search);
+    const productName = queryParams.get('prdName');
+    const category = queryParams.get('category');
+
+    if (category && categories.includes(category)) {
+      setSelectedCategory(category);
+    } else {
+      setSelectedCategory('All');
+    }
+    if (productName) {
+      setSearchTerm(productName);
+      // setSelectedCategory('All');
+    }
+  }, [location.search, setSearchTerm, setSelectedCategory]);
+  
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -322,7 +342,7 @@ const Products = () => {
           ))} */}
 
           {
-            filteredProducts.map((product, index) => (<ProductCard product={product} index={index} />))
+            filteredProducts.map((product, index) => (<ProductCard product={product} index={index} key={index} />))
 
           }
         </motion.div>

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Dumbbell, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import footerData from '../../data/footer.json';
-
+import productsData from '../../data/products.json'
 const Footer = () => {
   const getIcon = (iconName: string) => {
     const icons = {
@@ -15,6 +15,9 @@ const Footer = () => {
     return icons[iconName as keyof typeof icons] || Facebook;
   };
 
+  const productCategories=useMemo(()=>{
+    return Array.from(new Set(productsData.map(product => product.category))).sort(() => Math.random() - 0.5).slice(0, 6);
+  }, [productsData]);  
   return (
     <footer className="bg-gray-900 dark:bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -84,13 +87,13 @@ const Footer = () => {
           >
             <h3 className="text-lg font-semibold mb-4">Categories</h3>
             <ul className="space-y-2">
-              {footerData.categories.map((category) => (
-                <li key={category.path}>
+              {productCategories && productCategories.map((category) => (
+                <li key={category}>
                   <Link
-                    to={category.path}
+                    to={`/products?category=${category}`}
                     className="text-gray-400 hover:text-emerald-500 transition-colors"
                   >
-                    {category.name}
+                    {category}
                   </Link>
                 </li>
               ))}

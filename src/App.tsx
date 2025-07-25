@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/Layout/Header';
@@ -7,10 +7,13 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Verify from './pages/Verify';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/Layout/ScrollToTop';
 
 function App() {
+
   return (
     <Router>
+            <ScrollToTop/>
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Header />
         <AnimatePresence mode="wait">

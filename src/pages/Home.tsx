@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Shield, Trophy, Users, Star, CheckCircle } from 'lucide-react';
 import BannerSlider from '../components/Banner/BannerSlider';
+import ProductShowcase from '../components/Product/ProductShowCase';
 
 
 
@@ -85,10 +86,11 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white dark:bg-gray-900 ">
       {/* Banner Slider */}
       <BannerSlider />
 
+  <ProductShowcase />
       {/* Features Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -109,7 +111,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <FeatureCard feature={feature} index={index} />
+              <FeatureCard key={index} feature={feature} index={index} />
             ))}
           </div>
         </div>
