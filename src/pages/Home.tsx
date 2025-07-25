@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Shield, Trophy, Users, Star, CheckCircle } from 'lucide-react';
 import BannerSlider from '../components/Banner/BannerSlider';
-import ProductShowcase from '../components/Product/ProductShowCase';
+import ProductShowcase from '../components/Product/ProductShowcase';
 
 
 
